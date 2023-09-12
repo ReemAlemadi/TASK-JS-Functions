@@ -18,11 +18,11 @@ printName();
  * - Age = current year - birth
  */
 
-function printAge(Age){
-    console.log( 2023 - Age )
+function printAge(birthyear){
+    console.log( 2023 - birthyear )
 }
 
-printAge(27);
+printAge(1996);
 
 /**
  * Task 3:
@@ -56,7 +56,6 @@ printHello(`Arabic`,`Aisha`);
 
 
 
-    
 
 
 
