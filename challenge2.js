@@ -6,9 +6,14 @@
  * e.g.
  * greet("Hamza") logs "Hello Hamza"
  */
-function greet(name) {
-  // Your code here
-}
+
+function greet(name){
+console.log(`Hello ${name}`)
+};
+
+greet(`Reem`);
+greet(`Hamza`);
+
 
 /**
  * isOdd(n):
@@ -19,10 +24,18 @@ function greet(name) {
  * isOdd(7) -> true
  * isOdd(10) -> false
  */
-function isOdd(n) {
-  // Your code here
-}
 
+
+  function isOdd(n){
+   if(n%2 == 1){
+    return true;
+   }else{
+    return false;
+    }
+  }
+
+  let result = isOdd(8);
+  console.log(result);
 /**
  * oddsSmallerThan(n):
  * - receives a number n
@@ -33,8 +46,15 @@ function isOdd(n) {
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
-  // Your code here
+  if (n%2 == 0 ){
+  // the number is even 
+  console.log(n/2);
+  }else{
+    // the number id odd
+    console.log((n-1) / 2);
+  }
 }
+oddsSmallerThan(7);
 
 /**
  * squareOrDouble(n):
@@ -46,6 +66,12 @@ function oddsSmallerThan(n) {
  * squareOrDouble(16) -> 32
  * squareOrDouble(9) -> 81
  */
-function squareOrDouble(n) {
-  // Your code here
-}
+
+function squareOrDouble(n){
+  if (isOdd(n)){
+    console.log(n*n);
+  } else console.log(n*2);
+  };
+
+squareOrDouble(16);
+squareOrDouble(9);
